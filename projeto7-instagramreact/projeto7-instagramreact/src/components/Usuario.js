@@ -7,7 +7,7 @@ export default function Usuario() {
     return (
         <div class="usuario" data-test="nomeUsuario">
             <img data-test="profile-image" src={linkImagem} onClick={() =>{
-                const linkDaImagem = prompt("Informe um linkImagem para atualizar o perfil: ")
+                const linkDaImagem = prompt("Novo link de imagem para atualizar o perfil: ")
                 return linkDaImagem ?setlinkImagem(linkDaImagem): null
             }}/>
             <div class="texto" data-test="name">
@@ -15,7 +15,7 @@ export default function Usuario() {
                 <span>
                     {!nomeUsuario ?setnomeUsuario : nomeUsuario}
                     <ion-icon data-test="edit-name" name="pencil" onClick={() => {
-                        const nomeDoUsuario = prompt("Informe o nome de usuário: ")
+                        const nomeDoUsuario = prompt("Novo nome de usuário: ")
                         return nomeDoUsuario ?setnomeUsuario(nomeDoUsuario) : null
                     }}></ion-icon>
                 </span>
