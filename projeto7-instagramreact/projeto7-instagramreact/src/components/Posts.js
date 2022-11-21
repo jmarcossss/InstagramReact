@@ -85,14 +85,14 @@ function Post(props) {
 }
 
 const postContent = [
-    {fotoUsuario: "assets/meowed.png",
-    fotoPostadaUsuario: "assets/gato-telefone.png",
+    {fotoUsuario: "assets/caradaluva.jpg",
+    fotoPostadaUsuario: "assets/caradaluva.jpg",
     fotoUsuarioQueCurtiu: "assets/respondeai.png",
     perfilQueCurtiu: "respondeai",
     likes: "101.52"}
     ,
     {fotoUsuario: "assets/barked.png",
-    fotoPostadaUsuario: "assets/dog.png",
+    fotoPostadaUsuario: "assets/thanostarado.jpeg",
     fotoUsuarioQueCurtiu: "assets/adorableanimals.png",
     perfilQueCurtiu: "adorable_animals",
     likes: "99.15"}]

@@ -1,7 +1,10 @@
+import Usuario from "./Usuario"
+
 export default function SideBar() {
     return (
         <div class="sidebar">
-            <NomeFotoUsuario nomeUsuario={informacoesPerfisSidebar.nomeUsuario} nick={informacoesPerfisSidebar.nick} profileIMG={informacoesPerfisSidebar.profileIMG} />
+            <Usuario />
+
             <div class="sugestoes">
                 <div class="titulo">
                     Sugestões para você
@@ -9,6 +12,7 @@ export default function SideBar() {
                 </div>
                 {(informacoesPerfisSidebar.suggestion).map(suggestionContent => <InfoSidebar nomeUsuario={suggestionContent.nomeUsuario} profileIMG={suggestionContent.profileIMG} reason={suggestionContent.reason} />)}
             </div>
+
             <div class="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
             </div>
@@ -44,17 +48,15 @@ function NomeFotoUsuario(props) {
 
 function InfoSidebar(props) {
   return (
-
-      
-      <div class="sugestao">
-      <div class="usuario">
-          <img src={props.profileIMG} />
-          <div class="texto">
-              <div class="nome">{props.nomeUsuario}</div>
-              <div class="razao">{props.reason}</div>
-          </div>
-      </div>
-      <div class="seguir">Seguir</div>
-  </div>
-      )
+        <div class="sugestao">
+            <div class="usuario">
+                <img src={props.profileIMG} />
+                <div class="texto">
+                    <div class="nome">{props.nomeUsuario}</div>
+                    <div class="razao">{props.reason}</div>
+                </div>
+            </div>
+            <div class="seguir">Seguir</div>
+        </div>
+    )
 }
