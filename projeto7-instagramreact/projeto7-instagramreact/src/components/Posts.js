@@ -46,10 +46,10 @@ function Post(props) {
     }
 
     return (
-        <div class="post">
+        <div class="post" data-test="post">
             <div class="topo">
                 <div class="usuario">
-                    <img src={props.fotoUsuario} />
+                    <img src={props.fotoUsuario} data-test="post-image"/>
                     meowed
                 </div>
                 <div class="acoes">
@@ -64,12 +64,12 @@ function Post(props) {
             <div class="fundo">
                 <div class="acoes">
                     <div>
-                        <ion-icon class={iconColor} onClick={likeThePost} name={iconNameLike}></ion-icon>
+                        <ion-icon class={iconColor} onClick={likeThePost} name={iconNameLike} data-test="like-post"></ion-icon>
                         <ion-icon name="chatbubble-outline" ></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>
                     <div>
-                        <ion-icon class={iconColor2} onCLick={pressTheSave} name={iconNameSave}></ion-icon>
+                        <ion-icon class={iconColor2} onCLick={pressTheSave} name={iconNameSave} data-test="save-post"></ion-icon>
                     </div>
                 </div>
 
@@ -89,10 +89,10 @@ const postContent = [
     fotoPostadaUsuario: "assets/gato-telefone.png",
     fotoUsuarioQueCurtiu: "assets/respondeai.png",
     perfilQueCurtiu: "respondeai",
-    likes: "101.52" }
+    likes: "101.52"}
     ,
     {fotoUsuario: "assets/barked.png",
     fotoPostadaUsuario: "assets/dog.png",
     fotoUsuarioQueCurtiu: "assets/adorableanimals.png",
     perfilQueCurtiu: "adorable_animals",
-    likes: "99.15" }]
+    likes: "99.15"}]
