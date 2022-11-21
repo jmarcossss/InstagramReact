@@ -398,4 +398,32 @@
   
   .usuario ion-icon {
     margin-left: 5px;
-  }  
+  }
+
+  .fundo-mobile {
+    display: none;
+  }
+  
+  .fundo-mobile ion-icon {
+    cursor: pointer;
+  }
+
+  .fundo-mobile {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    background-color: #FFF;
+    border-top: 1px solid #DBDBDB;
+    height: 54px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  ion-icon .heart {
+    color: red;
+    width: 24px;
+  }

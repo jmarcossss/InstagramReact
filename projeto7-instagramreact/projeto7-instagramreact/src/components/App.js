@@ -1,5 +1,6 @@
 import Navbar from "./Navbar"
-import Left from "./Left"
+import Stories from "./Stories"
+import Posts from "./Posts"
 import Sidebar from "./Sidebar"
 
 export default function App() {
@@ -7,7 +8,10 @@ export default function App() {
         <div>
             <Navbar />
             <div class="corpo">
-                <Left />
+                <div class="esquerda">
+                    <Stories />
+                    <Posts />
+                </div>
                 <Sidebar />
             </div>
         </div>
